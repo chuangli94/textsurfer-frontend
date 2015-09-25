@@ -13,9 +13,9 @@ $(window).scroll(function() {
     });
 
     if(wScroll > $('.feature-demos').offset().top - ($(window).height()/1.2)) {
-        $('.clothes-pics figure').each(function(i) {
+        $('.feature-demos figure').each(function(i) {
             setTimeout(function(){
-                $('.clothes-pics figure').eq(i).addClass('is-showing');
+                $('.feature-demos figure').eq(i).addClass('is-showing');
             }, 200*(i+1));
         });
     }
