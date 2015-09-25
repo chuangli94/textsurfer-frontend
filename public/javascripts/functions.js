@@ -12,16 +12,7 @@ $(window).scroll(function() {
         'transform' : 'translate(0px, '+ wScroll /3 +'%)'
     });
 
-    $('.back-bird').css({
-        'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-    });
-
-    $('.fore-bird').css({
-        // negative scrool ==> scroll up!!
-        'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-    });
-
-    if(wScroll > $('.clothes-pics').offset().top - ($(window).height()/1.2)) {
+    if(wScroll > $('.feature-demos').offset().top - ($(window).height()/1.2)) {
         $('.clothes-pics figure').each(function(i) {
             setTimeout(function(){
                 $('.clothes-pics figure').eq(i).addClass('is-showing');

@@ -32,10 +32,10 @@ img {
 
 /* Parallax */
 
-.bird-box {
+.header-box {
   position: relative;
   height: 300px;
-  background-image: url(../images/data-background-bright.jpg);
+  background-image: url(../images/data-background-less-bright.jpg);
   -webkit-background-size: auto 600px;
   background-size: auto 600px;
   background-position: top center;
@@ -56,37 +56,11 @@ img {
   margin-top: -100px;
 }
 
-.fore-bird {
-  display: none;
-  width: 960px;
-  height: 733px;
-  background-image: url(../images/fore-bird.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  position: absolute;
-  left: 50%;
-  margin-left: -480px;
-  top: 380px;
-}
-
-.back-bird {
-  display: none;
-  width: 480px;
-  height: 298px;
-  background-image: url(../images/back-bird.png);
-  background-repeat: no-repeat;
-  background-position: top left;
-  /*background-color: lightpink;*/
-  position: absolute;
-  margin-left: -480px;
-  left: 50%;
-}
-
-.clothes-pics {
+.feature-demos {
   margin-bottom: 100px;
 }
 
-.clothes-pics figure {
+.feature-demos figure {
   margin-bottom: 20px;
   position: relative;
   transform: translateX(30px);
@@ -97,29 +71,29 @@ img {
 }
 
 /* Fly-in animation on hover */
-.clothes-pics figure:hover > figcaption{
+.feature-demos figure:hover > figcaption{
   left: 0%;
 }
 
 /* Scale image on hover */
-.clothes-pics figure:hover > img {
+.feature-demos figure:hover > img {
   /*transform: scale(0.9);*/
   backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1.05);
 }
 
-.clothes-pics figure img {
+.feature-demos figure img {
   display: block;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
 
-.clothes-pics .is-showing {
+.feature-demos .is-showing {
   opacity: 1;
   transform: translateX(0px);
 }
 
-.clothes-pics figcaption {
+.feature-demos figcaption {
   position: absolute;
   bottom: 10px;
   left: -100%;
