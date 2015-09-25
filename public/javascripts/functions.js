@@ -3,10 +3,13 @@
  */
 
 $(document).ready(function(){
-    
+
     if(typeof window.orientation !== 'undefined'){  // mobile phone
         $('.logo').css({
             'background-image':'url(../images/text-surfer-logo-mobile.png)'
+        });
+        $('.nav').css({
+           'display' : 'none'
         });
     }
 });
