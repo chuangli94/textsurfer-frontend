@@ -1,0 +1,19 @@
+{
+  "name": "StaticBackground",
+  "version": "0.0.0",
+  "authors": [
+    "Chuang Li <chuang.li94@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4"
+  }
+}

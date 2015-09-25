@@ -1,0 +1,229 @@
+.button {
+  border-radius: 100px;
+}
+
+.introduction {
+  margin : 50px 0;
+}
+
+.content article {
+  /*padding-top: 50px;*/
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+pre code {
+  text-align: justify;
+  vertical-align: middle;
+  padding: 20px 50px;
+  top: 50%;
+  left: 50%;
+  white-space: pre-wrap;
+}
+
+figure {
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Parallax */
+
+.bird-box {
+  position: relative;
+  height: 300px;
+  background-image: url(../images/data-background-bright.jpg);
+  -webkit-background-size: auto 600px;
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.logo {
+  height: 180px;
+  width: 100%;
+  background-image: url(../images/text-surfer-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.fore-bird {
+  display: none;
+  width: 960px;
+  height: 733px;
+  background-image: url(../images/fore-bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px;
+}
+
+.back-bird {
+  display: none;
+  width: 480px;
+  height: 298px;
+  background-image: url(../images/back-bird.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  /*background-color: lightpink;*/
+  position: absolute;
+  margin-left: -480px;
+  left: 50%;
+}
+
+.clothes-pics {
+  margin-bottom: 100px;
+}
+
+.clothes-pics figure {
+  margin-bottom: 20px;
+  position: relative;
+  transform: translateX(30px);
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* Fly-in animation on hover */
+.clothes-pics figure:hover > figcaption{
+  left: 0%;
+}
+
+/* Scale image on hover */
+.clothes-pics figure:hover > img {
+  /*transform: scale(0.9);*/
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.05);
+}
+
+.clothes-pics figure img {
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.clothes-pics .is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.clothes-pics figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: -100%;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Periscope */
+
+.periscope {
+  height: 640px;
+  background-image: url(../images/model2.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Tint overlay */
+
+.window-tint {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-text {
+  color: white;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.promo-text strong {
+  display: block;
+  font-size: 30px;
+}
+
+.promo-text span {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255,255,255,0.6);
+}
+
+.window-cta {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out
+}
+
+.window-cta:hover {
+  background: white;
+  color: black;
+}
+
+.howitworks {
+  text-align: justify;
+}
+
+.howitworks img{
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  overflow: hidden;
+}
+
+.signup label {
+  padding-left: 2px;
+  text-align: left;
+}
+
+.question label {
+  padding-left: 2px;
+  text-align: left;
+}
+
+.footer-box {
+  position: relative;
+  height: 300px;
+  background-image: url(../images/data-background-bright.jpg);
+  -webkit-background-size: auto 600px;
+  background-size: auto 600px;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
