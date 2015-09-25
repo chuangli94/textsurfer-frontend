@@ -2,6 +2,15 @@
  * Created by Chuang on 9/23/2015.
  */
 
+$(document).ready(function(){
+    
+    if(typeof window.orientation !== 'undefined'){  // mobile phone
+        $('.logo').css({
+            'background-image':'url(../images/text-surfer-logo-mobile.png)'
+        });
+    }
+});
+
 $(window).scroll(function() {
     // how far we are from top
     var wScroll = $(this).scrollTop();
