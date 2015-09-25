@@ -12,6 +12,20 @@ $(window).scroll(function() {
         'transform' : 'translate(0px, '+ wScroll /3 +'%)'
     });
 
+    if(wScroll > $('.content-wrapper').offset().top) {
+        $('.nav').css({
+            'top':'0%',
+            'width':'100%'
+        });
+        //$('.content-wrapper').css({
+        //    'margin-top':'60px',
+        //});
+    } else {
+        $('.nav').css({
+            'top':'-50%',
+        });
+    }
+
     if(wScroll > $('.feature-demos').offset().top - ($(window).height()/1.2)) {
         $('.feature-demos figure').each(function(i) {
             setTimeout(function(){

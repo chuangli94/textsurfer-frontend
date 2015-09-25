@@ -5,153 +5,170 @@ block content
   header.header-box
     .logo
 
-  section#introduction.content.introduction
-    article
+  .nav
+    .nav-logo
+      img(src="/images/nav-logo.png")
+    ul
+      li
+        a(href="#") Home
+      li
+        a(href="#features") Features
+      li
+        a(href="#howitworks") How it works
+      li
+        a(href="#signup") Sign Up
+      li
+        a(href="#question") Questions
 
-      h1 What it does
-      hr
+  .content-wrapper
+    section#introduction.content.introduction.anchor
+      article
 
-      h5 Need to find direction, weather, or news on the go?
-          <br>TextSurfer gives you access to the internet without having a data plan. Interested?
-          <br>
-      a(href="#signup").button.button-primary Try TextSurfer
-      br
-      hr
-
-  section#features.content
-    article
-
-      h1 Features
-      hr
-
-      .feature-demos
-        .row.img-row
-          .columns.six.instruction
-            .row
-              h4 WEATHER
-            .row
-              pre
-                code Construct the text like this: <div>
-                  <br><strong>weather</strong> {City} , {State} </div>
-                  <br>replace {City} , {State} with your location
-          figure.columns.six
-            img(src="/images/weather.png")
-            figcaption What's the weather like?!
-
-        .row.img-row
-          .columns.six.instruction
-            .row
-              h4 DIRECTION
-            .row
-              pre
-                code Construct the text like this:
-                  <br><strong>dir</strong>
-                  <br><strong>f:</strong> {from}
-                  <br><strong>t:</strong> {to}
-                  <br>replace {from} and {to} with starting location and destination
-          figure.columns.six
-            img(src="/images/direction.png")
-            figcaption I am so LOST!
-
-        .row.img-row
-          .columns.six.instruction
-            .row
-              h4 NEWS
-            .row
-              pre
-                code Construct the text like this:
-                  <br><strong>news</strong>
-          figure.columns.six
-            img(src="/images/news.png")
-            figcaption Keep me informed!
-
-      hr
-
-  section#howitworks.content.howitworks
-    article
-
-      h1 How it works
-      hr
-
-      ul
-        li You send a text message to your Gmail
-        li TextSurfer retrieves the email with your command
-        li TextSurfer searches the internet for a result
-        li TextSurfer finds result
-        li TextSurfer instructs your Gmail account to send you the result
-        li Gmail sends email with search result to you
-        li You receive text message with result
-
-      div
-        img(src="/images/how_it_works.jpg")
-      hr
-
-  section#signup.content.signup
-    article
-
-      h1 Sign Up
-      hr
-
-      p Now you know what TextSurfer does and how it works, wanna give it a try?
-
-      form
-        .row
-          .columns.three &nbsp;
-          .columns.six
-            label Gmail
-            input(type="email", placeholder="hello@gmail.com").u-full-width
-          .columns.three &nbsp;
-
-        .row
-          .columns.three &nbsp;
-          .columns.six
-            label Carrier
-
-            - var items = ['Rogers', 'Bell', 'Fido', 'T-Mobile']
-            select.u-full-width
-                each item, i in items
-                  option(value=i) #{item}
-          .columns.three &nbsp;
-
-        .row
-          .columns.three &nbsp;
-          .columns.six
-            label Phone Number
-            input(type="tel").u-full-width
-          .columns.three &nbsp;
-
-        br
-        input(type="submit", value="Sign Up").button-primary
+        h1 What it does
         hr
 
-  section#question.content.question
-    article
-
-      h1 Questions?
-      hr
-
-      p Leave us a question or a message below!
-
-      form
-        .row
-          .columns.three &nbsp;
-          .columns.six
-            label Email
-            input(type="email", placeholder="hello@mail.com").u-full-width
-          .columns.three &nbsp;
-
-        .row
-          .columns.three &nbsp;
-          .columns.six
-            label Message
-            textarea(placeholder="Hi TextSurfer").u-full-width
-          .columns.three &nbsp;
-
+        h5 Need to find direction, weather, or news on the go?
+            <br>TextSurfer gives you access to the internet without having a data plan. Interested?
+            <br>
+        a(href="#signup").button.button-primary Try TextSurfer
         br
-        input(type="submit", value="Submit").button-primary
+        hr
+
+    section#features.content.anchor
+      article
+
+        h1 Features
+        hr
+
+        .feature-demos
+          .row.img-row
+            .columns.six.instruction
+              .row
+                h4 WEATHER
+              .row
+                pre
+                  code Construct the text like this: <div>
+                    <br><strong>weather</strong> {City} , {State} </div>
+                    <br>replace {City} , {State} with your location
+            .columns.six
+              figure
+                img(src="/images/weather.png")
+                figcaption What's the weather like?!
+
+          .row.img-row
+            .columns.six.instruction
+              .row
+                h4 DIRECTION
+              .row
+                pre
+                  code Construct the text like this:
+                    <br><strong>dir</strong>
+                    <br><strong>f:</strong> {from}
+                    <br><strong>t:</strong> {to}
+                    <br>replace {from} and {to} with starting location and destination
+            figure.columns.six
+              img(src="/images/direction.png")
+              figcaption I am so LOST!
+
+          .row.img-row
+            .columns.six.instruction
+              .row
+                h4 NEWS
+              .row
+                pre
+                  code Construct the text like this:
+                    <br><strong>news</strong>
+            figure.columns.six
+              img(src="/images/news.png")
+              figcaption Keep me informed!
+
+        hr
+
+    section#howitworks.content.howitworks.anchor
+      article
+
+        h1 How it works
+        hr
+
+        ul
+          li You send a text message to your Gmail
+          li TextSurfer retrieves the email with your command
+          li TextSurfer searches the internet for a result
+          li TextSurfer finds result
+          li TextSurfer instructs your Gmail account to send you the result
+          li Gmail sends email with search result to you
+          li You receive text message with result
+
+        div
+          img(src="/images/how_it_works.jpg")
+        hr
+
+    section#signup.content.signup.anchor
+      article
+
+        h1 Sign Up
+        hr
+
+        p Now you know what TextSurfer does and how it works, wanna give it a try?
+
+        form
+          .row
+            .columns.three &nbsp;
+            .columns.six
+              label Gmail
+              input(type="email", placeholder="hello@gmail.com").u-full-width
+            .columns.three &nbsp;
+
+          .row
+            .columns.three &nbsp;
+            .columns.six
+              label Carrier
+
+              - var items = ['Rogers', 'Bell', 'Fido', 'T-Mobile']
+              select.u-full-width
+                  each item, i in items
+                    option(value=i) #{item}
+            .columns.three &nbsp;
+
+          .row
+            .columns.three &nbsp;
+            .columns.six
+              label Phone Number
+              input(type="tel").u-full-width
+            .columns.three &nbsp;
+
+          br
+          input(type="submit", value="Sign Up").button-primary
+          hr
+
+    section#question.content.question.anchor
+      article
+
+        h1 Questions?
+        hr
+
+        p Leave us a question or a message below!
+
+        form
+          .row
+            .columns.three &nbsp;
+            .columns.six
+              label Email
+              input(type="email", placeholder="hello@mail.com").u-full-width
+            .columns.three &nbsp;
+
+          .row
+            .columns.three &nbsp;
+            .columns.six
+              label Message
+              textarea(placeholder="Hi TextSurfer").u-full-width
+            .columns.three &nbsp;
+
+          br
+          input(type="submit", value="Submit").button-primary
 
 
-    footer.footer-box
+  footer.footer-box
 
 
   script(src="https://code.jquery.com/jquery-2.1.4.min.js")

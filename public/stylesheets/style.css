@@ -1,3 +1,66 @@
+.anchor {
+  padding-top: 70px; margin-top: -70px;
+}
+
+.nav {
+  top: -50%;
+  transition: all 0.3s ease;
+  z-index: 1;
+  position:fixed;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  height:35px;
+}
+
+.nav-logo {
+  float:left;
+}
+.nav img {
+  margin: 3px;
+  max-width:100%;
+  max-height:100%;
+  height: 30px;
+  overflow: hidden;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+
+}
+.nav a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+.nav a:hover {
+  color: rgba(255, 255, 255, 1)
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s background-color;
+}
+
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    margin: 5px;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
 .button {
   border-radius: 100px;
 }
@@ -42,7 +105,6 @@ img {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
-  margin-bottom: 50px;
 }
 
 .logo {
@@ -104,71 +166,6 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-/* Periscope */
-
-.periscope {
-  height: 640px;
-  background-image: url(../images/model2.jpg);
-  background-position: center 0px;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  margin-top: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: relative;
-}
-
-/* Tint overlay */
-
-.window-tint {
-  background-color: rgba(0,0,0,0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.promo-text {
-  color: white;
-  font-weight: 100;
-  font-size: 50px;
-  line-height: 1.2;
-}
-
-.promo-text strong {
-  display: block;
-  font-size: 30px;
-}
-
-.promo-text span {
-  font-weight: 300;
-  font-size: 18px;
-  font-style: italic;
-  color: rgba(255,255,255,0.6);
-}
-
-.window-cta {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  transition: all 0.3s ease-in-out
-}
-
-.window-cta:hover {
-  background: white;
-  color: black;
-}
-
 .howitworks {
   text-align: justify;
 }
@@ -193,7 +190,7 @@ img {
 .footer-box {
   position: relative;
   height: 300px;
-  background-image: url(../images/data-background-bright.jpg);
+  background-image: url(../images/data-background-less-bright.jpg);
   -webkit-background-size: auto 600px;
   background-size: auto 600px;
   background-position: bottom;
