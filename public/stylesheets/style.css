@@ -2,6 +2,18 @@
   padding-top: 70px; margin-top: -70px;
 }
 
+.signup-button-mobile {
+  display:none;
+  position:fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.signup-button-mobile a {
+  font-size: 7px;
+  padding: 0;
+}
+
 .nav {
   top: -50%;
   transition: all 0.3s ease;

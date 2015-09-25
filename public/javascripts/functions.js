@@ -11,6 +11,9 @@ $(document).ready(function(){
         $('.nav').css({
            'display' : 'none'
         });
+        $('.signup-button-mobile').css({
+            'display' : 'block'
+        });
     }
 });
 
