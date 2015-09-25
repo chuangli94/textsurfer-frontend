@@ -7,11 +7,13 @@
   position:fixed;
   bottom: 0px;
   right: 0px;
+  margin: 20px;
+  z-index: 1;
 }
 
 .signup-button-mobile a {
   font-size: 7px;
-  padding: 0;
+  padding: 0 0;
 }
 
 .nav {
