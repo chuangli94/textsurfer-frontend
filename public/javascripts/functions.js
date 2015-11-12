@@ -4,6 +4,11 @@
 
 $(document).ready(function(){
 
+    $('.signupButton').click(function() {
+        console.log("clicked");
+        alert("Thanks for trying this servce, I'm still working on the backend! You can checkout the a proof of concept here: \n\n https://github.com/chuangli94/textsurfer");
+    });
+
     if(typeof window.orientation !== 'undefined'){  // mobile phone
         $('.logo').css({
             'background-image':'url(../images/text-surfer-logo-mobile.png)'

@@ -1,5 +1,5 @@
 .anchor {
-  padding-top: 70px; margin-top: -70px;
+  padding-top: 50px; margin-top: -70px;
 }
 
 .signup-button-mobile {
@@ -82,7 +82,7 @@
 }
 
 .introduction {
-  margin : 50px 0;
+  margin : 0px 0;
 }
 
 .content article {
@@ -205,7 +205,7 @@ img {
 
 .footer-box {
   position: relative;
-  height: 300px;
+  height: 200px;
   background-image: url(../images/data-background-less-bright.jpg);
   -webkit-background-size: auto 600px;
   background-size: auto 600px;
@@ -213,4 +213,12 @@ img {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.copyright {
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
